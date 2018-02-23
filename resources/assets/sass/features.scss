@@ -1,0 +1,90 @@
+.features {
+  align-items: baseline;
+  background-color: $background-color;
+  border-bottom: 1px solid $border-color;
+  border-top: 1px solid $border-color;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2em;
+
+  @include desktop {
+    justify-content: space-between;
+  }
+
+  @include small-desktop {
+    justify-content: space-between;
+  }
+
+  @include tablet {
+    justify-content: center;
+  }
+}
+
+.feature__item {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+
+  @include desktop {
+    width: 30%;
+  }
+
+  @include small-desktop {
+    width: 25%;
+  }
+
+  @include tablet {
+    width: 70%;
+  }
+
+  @include mobile {
+    width: 90%;
+  }
+}
+
+.feature__item--text {
+  font-family: $primary-font;
+  text-align: center;
+}
+
+.feature__item--text p {
+  color: rgba(0, 0, 0, .75);
+}
+
+.features i {
+  color: $primary-color;
+  display: inline-block;
+  font-size: 4.8em;
+  height: 127px;
+  padding: .3em;
+  text-shadow: 4px 5px 10px rgba(206, 206, 206, .75);
+  transition: all .2s ease-out;
+
+  @include small-desktop {
+    font-size: 4em;
+    height: 115px;
+  }
+
+  @include tablet {
+    font-size: 4em;
+    max-width: 75%;
+  }
+
+  @include mobile {
+    font-size: 4em;
+    height: 115px;
+  }
+}
+
+.features i:hover {
+  color: darken($primary-color, 10%);
+  text-shadow: 4px 5px 10px rgba(206, 206, 206, 1);
+  transform: scale(1.05);
+}
+
+.features i:active {
+  transform: scale(1);
+}

@@ -1,0 +1,32 @@
+{
+  "name": "acer_worki",
+  "version": "1.0.0",
+  "sasslintConfig": "sass.lint.yaml",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.1.1",
+    "laravel-mix": "^1.7.2",
+    "popper.js": "^1.12.9",
+    "sass-lint": "^1.12.1"
+  },
+  "dependencies": {
+    "jquery-form-validator": "^2.3.77",
+    "lightbox2": "^2.10.0",
+    "scrollreveal": "^3.3.6"
+  }
+}

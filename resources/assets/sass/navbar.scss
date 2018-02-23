@@ -1,0 +1,158 @@
+.navbar {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 1em;
+
+  @include big-desktop {
+    margin: 0 auto;
+    width: $width-big-desktop;
+  }
+
+  @include desktop {
+    margin: 0 auto;
+    width: $width-desktop;
+  }
+}
+
+.navbar__mobile {
+  display: none;
+}
+
+.navbar__logo img {
+  margin: 0 5px;
+}
+
+.navbar__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 10px;
+
+  @include desktop {
+    padding: 0;
+  }
+}
+
+.navbar__list li {
+  border: 1px solid transparent;
+}
+
+.navbar__list li a {
+  color: #000;
+  display: block;
+  font-size: 1em;
+  margin-right: 5px;
+  padding: 7px 8px 3px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar__list li a:hover {
+  cursor: pointer;
+}
+
+.navbar__list li a::after {
+  background: $primary-color;
+  content: '';
+  display: block;
+  height: 4px;
+  transition: width .15s ease-out;
+  width: 0;
+}
+
+.navbar__list li a:hover::after {
+  width: 100%;
+}
+
+.navbar__list li.active {
+  background-color: lighten($border-color, 17%);
+  border: 1px solid lighten($border-color, 7%);
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  transition: box-shadow .15s ease-out;
+}
+
+.navbar__list li.active:hover {
+  box-shadow: none;
+}
+
+.navbar__list li.active a:hover::after {
+  width: 0;
+}
+
+@include tablet {
+
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .navbar__mobile {
+    display: block;
+    left: 0;
+    margin: .25em;
+    padding: .25em;
+    position: absolute;
+    top: 15px;
+  }
+
+  .navbar__mobile i {
+    font-size: 2.5em;
+  }
+
+  .navbar__mobile i:hover {
+    cursor: pointer;
+  }
+
+  .navbar__logo img {
+    margin: 0;
+  }
+
+  .navbar__list {
+    display: none;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .navbar_show {
+    display: block;
+  }
+
+  .navbar__list li a {
+    color: #000;
+    display: block;
+    font-size: 1em;
+    margin-right: 0;
+    padding: .5em;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .navbar__list li a:hover {
+    background: lighten($primary-color, 25%);
+    cursor: pointer;
+  }
+
+  .navbar__list li a:active {
+    background: lighten($primary-color, 25%);
+  }
+
+  .navbar__list li a::after {
+    background: $primary-color;
+    content: '';
+    display: none;
+    height: 0;
+    transition: width .15s ease-out;
+    width: 0;
+  }
+
+  .navbar__list li a:hover::after {
+    width: 0;
+  }
+}

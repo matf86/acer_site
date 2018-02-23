@@ -1,0 +1,51 @@
+title: Worki Barierowe | Worki PAPE | Worki termokurczliwe | Opakowania Foliowe dla Przemysłu Spożywczego.
+meta_description: Przedsiębiorstwo Wielobranżowe ACER | Producent Worków Foliowych dla Przemysłu Spożywczego, Wysokiej Jakości Worki PA / PE oraz Worki Termokurczliwe, Worki Barierowe.
+header: Producent opakowań foliowych
+header_bg: home
+about_us:
+  header: o firmie
+  text: >
+    Przedsiębiorstwo Wielobranżowe „ACER” to firma rodzinna, która specjalizuje się w produkcji i dystrybucji opakowań
+    foliowych dla różnych gałęzi przemysłu spożywczego. Najwazniejszą częścią naszej oferty są opakowania z folii
+    barierowych, przeznaczone do pakowania próżniowego i w mieszaninach gazów obojętnych. Od początku istnienia misją
+    firmy jest dostarczanie produktów charakteryzujących się najwyższą jakością, powstających z wysokogatunkowych surowców.
+features:
+  -
+    header: doświadczenie
+    icon: fa-users
+    text: >
+      Dzięki blisko 13 letniej obecność na rynku opakowań nasi pracownicy doskonale rozumieją potrzeby klientów
+      w zakresie pakowania żywności. Długoletnie doświadczenie, rzetelność i fachowość pracowników pozwala na
+      współprace z największymi przedstawicielami przemysłu mięsnego i mleczarskiego w Polsce.
+  -
+    header: jakość
+    icon: fa-thumbs-up
+    text: >
+      W procesie produkcji worków przywiązujemy dużą wagę do przestrzegania wysokich standardów jakościowych.
+      Materiały wykorzystywane do produkcji zakupujemy od sprawdzonych europejskich dostawców, którzy gwarantują ich jakość
+      i zgodność z obowiązującymi normami, dzięki czemu oferowane opakowania spełniają wszelkie wymagania Wspólnoty Europejskiej.
+  -
+    header: elastyczność
+    icon: fa-handshake-o
+    text: >
+      Z jednakową uwagą traktujemy wszystkich naszych klientów. Indywidualne podejście do potrzeb naszych odbiorców,
+      wieloletnie doświadczenie oraz stały bezpośredni kontakt pozwala nam na prowadzenie obustronnie satysfakcjonującej współpracy.
+products:
+  pape:
+    header: worki pape
+    image: /images/pape_woreczki_kwaszonki.jpg
+    image_description: worki z folii pape
+    text: >
+      Znajdujące się w naszej ofercie worki barierowe wyprodukowane z wielowarstwowej folii o strukturze PA/PE (poliamid/polietylen)
+      charakteryzują się dużą barierowością względem gazów, doskonałą przeźroczystością, odporność mechaniczną,
+      bardzo dobra zgrzewalnością oraz szybkim czasem obkurczu...
+    link: worki_pape
+  termo:
+    header: worki termokurczliwe
+    image: /images/worki_termokurczliwe.jpg
+    image_description: worki termokurczliwe
+    text: >
+      Dostarczane przez nas opakowania termokurczliwe charakteryzują się bardzo wysoką barierowością dla gazów oraz pary wodnej,
+      doskonałą transparentnością oraz odporność mechaniczną. Bardzo dobra zgrzewalność oraz szybki czas obkurczu pozytywnie
+      wpływa na efektywność oraz wydajnośc procesu pakowania...
+    link: worki_termo

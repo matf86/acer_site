@@ -1,0 +1,146 @@
+.contact {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 2em 0;
+
+  @include mobile {
+    text-align: center;
+  }
+}
+
+.contact__address {
+
+  @include tablet {
+    width: 80vw;
+  }
+
+}
+
+.contact h2 {
+  margin: 0 auto;
+  margin-bottom: 1em;
+  max-width: 90%;
+
+  @include tablet {
+    max-width: 55%;
+  }
+
+  @include mobile {
+    max-width: 80%;
+  }
+}
+
+.contact__address--hq {
+  @include tablet {
+    margin-bottom: 1.5em;
+  }
+}
+
+.contact__address--hq i {
+  font-size: 1.3em;
+  margin-right: .25em;
+  padding: .25em;
+  width: 35px;
+}
+
+.contact__form {
+  width: 25vw;
+
+  @include desktop {
+    width: 30vw;
+  }
+
+  @include small-desktop {
+    width: 40vw;
+  }
+
+  @include tablet {
+    width: 80vw;
+  }
+}
+
+.recaptcha {
+  min-height: 104px;
+}
+
+form input[type='text'],
+form input[type='email'],
+form input[type='tel'],
+form input[type='url'],
+form textarea,
+form button[type='submit'] {
+  font: 400 12px/16px $primary-font;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-height: 70px;
+  min-width: 100%;
+  padding: 0;
+}
+
+fieldset:nth-of-type(4) {
+  min-height: 123px;
+}
+
+form input[type='text'],
+form input[type='email'],
+form input[type='tel'],
+form input[type='url'],
+form textarea {
+  background: #fff;
+  border: 2px solid rgba(204, 204, 204, .5);
+  margin: 0 0 5px;
+  padding: 10px;
+  width: 100%;
+}
+
+form input[type='text']:hover,
+form input[type='email']:hover,
+form input[type='tel']:hover,
+form input[type='url']:hover,
+form textarea:hover {
+  background: rgba(204, 204, 204, .1);
+  transition: background .5s ease;
+}
+
+form button[type='submit'] {
+  cursor: pointer;
+  font-size: 1em;
+  margin: .5em 0;
+  padding: .5em;
+  width: 100%;
+}
+
+form input:focus,
+form textarea:focus {
+  background: rgba(204, 204, 204, .1);
+  border: 2px solid lighten($primary-color, 15%) !important;
+  outline: 0;
+}
+
+form span {
+  color: rgba(185, 74, 72, .8);
+  font-size: .8em;
+}
+
+#map {
+  border-top: 1px solid $border-color;
+  height: 40vh;
+  width: 100%;
+}
+
+.alert {
+  margin: 0;
+  min-height: 50px;
+  opacity: 0;
+  transition: .5s linear opacity;
+}
+
+.show {
+  min-height: 0;
+  opacity: 1;
+}
