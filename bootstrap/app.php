@@ -84,6 +84,7 @@ $app->singleton(
 
 //Register Mail service provider
 $app->configure('mail');
+$app->configure('services');
 $app->register(\Illuminate\Mail\MailServiceProvider::class);
 
 /*
