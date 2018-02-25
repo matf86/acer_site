@@ -30,6 +30,7 @@ class ContactFormMail extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.contactForm');
+        return $this->subject('WWW.WORKI-BARIEROWE.PL-FORMULARZ KONTAKTOWY')
+            ->markdown('emails.contactForm');
     }
 }
