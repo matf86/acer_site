@@ -26,7 +26,18 @@
     background-size: cover;
     border: 1px solid $border-color;
     display: block;
-    min-height: 25vh;
+    min-height: 35vh;
+    min-width: 100%;
+  }
+
+  @include mobile {
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid $border-color;
+    display: block;
+    min-height: 40vh;
     min-width: 100%;
   }
 }
@@ -46,6 +57,7 @@
   }
 
   @include tablet {
+    text-align: center;
     padding: 1em;
     width: 80%;
   }
