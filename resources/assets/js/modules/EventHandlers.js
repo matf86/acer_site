@@ -7,7 +7,9 @@ export default class EventHandlers
             {
                 $el: $('.navbar__mobile'),
                 event: "click",
-                handler: function() { $(".navbar__list").toggleClass('navbar_show'); }
+                handler: function() {
+                    $(".navbar__list").toggleClass('navbar_show');
+                }
             },
             {
                 $el: $('header'),

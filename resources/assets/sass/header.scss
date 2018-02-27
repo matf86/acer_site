@@ -17,11 +17,13 @@ header {
   }
 
   @include tablet {
-    height: 35vh;
+    background-size: cover;
+    height: 45vh;
   }
 
   @include mobile {
-    height: 30vh;
+    background-size: cover;
+    height: 50vh;
   }
 }
 
@@ -30,7 +32,7 @@ header h1 {
   font-family: $secondary-font;
   font-size: 6.5em;
   text-align: center;
-  text-shadow: 5px 4px 0 lighten($primary-color, 20%);
+  text-shadow: 4px 3px 0 lighten($primary-color, 20%);
   transition: text-shadow .4s ease;
 
   @include desktop {
@@ -42,10 +44,12 @@ header h1 {
   }
 
   @include tablet {
+    text-shadow: 3px 2px 0 lighten($primary-color, 20%);
     font-size: 4em;
   }
 
   @include mobile {
+    text-shadow: 3px 2px 0 lighten($primary-color, 20%);
     font-size: 2em;
   }
 }
