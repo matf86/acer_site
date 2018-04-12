@@ -10824,7 +10824,8 @@ header {
 
 @media (max-width: 991px) {
   header {
-    height: 45vh;
+    height: 350px;
+    padding-top: 100px;
   }
 }
 
@@ -11073,7 +11074,7 @@ nav {
     margin: 4px;
     padding: 4px;
     position: absolute;
-    top: 25px;
+    top: 15px;
   }
 
   .navbar__mobile i {
@@ -11090,9 +11091,10 @@ nav {
 
   .nav__logo {
     background: url("/images/logo_transparent.png");
-    height: 100px;
+    background-size: cover;
+    height: 75px;
     position: relative;
-    width: 200px;
+    width: 150px;
   }
 
   .navbar__list {

@@ -11,7 +11,8 @@ header {
   min-width: 100%;
 
   @include tablet {
-    height: 45vh;
+    height: 350px;
+    padding-top: 100px;
   }
 
 }
