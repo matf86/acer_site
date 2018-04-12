@@ -1,39 +1,27 @@
 header {
   align-items: center;
   background-attachment: fixed;
-  background-position: top;
+  background-position: top center;
   background-repeat: no-repeat;
-  background-size: auto;
-  border-bottom: 2px solid $border-color;
-  border-bottom-left-radius: 65% 10%;
-  border-bottom-right-radius: 65% 10%;
+  background-size: cover;
+  border-bottom: 1px solid $border-color;
   display: flex;
-  height: 55vh;
+  height: 65vh;
   justify-content: center;
   min-width: 100%;
 
-  @include big-desktop {
-    background-size: cover;
-  }
-
   @include tablet {
-    background-size: cover;
     height: 45vh;
   }
 
-  @include mobile {
-    background-size: cover;
-    height: 50vh;
-  }
 }
 
 header h1 {
-  color: rgba(0, 0, 0, .65);
-  font-family: $secondary-font;
-  font-size: 6.5em;
+  color: #fff;
+  font-family: $header-font;
+  font-size: 7.5em;
   text-align: center;
-  text-shadow: 4px 3px 0 lighten($primary-color, 20%);
-  transition: text-shadow .4s ease;
+  text-shadow: 1px 2px 0 #000;
 
   @include desktop {
     font-size: 6em;
@@ -44,92 +32,105 @@ header h1 {
   }
 
   @include tablet {
-    text-shadow: 3px 2px 0 lighten($primary-color, 20%);
-    font-size: 4em;
+    font-size: 4.65em;
   }
 
   @include mobile {
-    text-shadow: 3px 2px 0 lighten($primary-color, 20%);
-    font-size: 2em;
+    font-size: 2.75em;
+  }
+}
+
+.header__icon {
+  position: absolute;
+  bottom: 5%;
+}
+
+
+.scroll-down {
+  -webkit-animation: floating-arrow 1.6s infinite ease-in-out 0s;
+  -o-animation: floating-arrow 1.6s infinite ease-in-out 0s;
+  animation: floating-arrow 1.6s infinite ease-in-out 0s;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+@-webkit-keyframes floating-arrow {
+  from {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  65% {
+    -webkit-transform: translateY(11px);
+    transform: translateY(11px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-o-keyframes floating-arrow {
+  from {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  65% {
+    -webkit-transform: translateY(11px);
+    transform: translateY(11px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes floating-arrow {
+  from {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  65% {
+    -webkit-transform: translateY(11px);
+    transform: translateY(11px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
 header.home {
-  background-image: url('/images/headers/home_header_large.jpg');
-
-  @include desktop {
-    background-image: url('/images/headers/home_header_desktop.jpg');
-  }
-
-  @include small-desktop {
-    background-image: url('/images/headers/home_header_small_desktop.jpg');
-  }
+  height: 100vh;
+  background-image: url('/images/headers/home_header_base.jpg');
 
   @include tablet {
-    background-image: url('/images/headers/home_header_tablet.jpg');
-  }
-
-  @include mobile {
-    background-image: url('/images/headers/home_header_mobile.jpg');
+    background-image: url('/images/headers/home_header_base_tablet.jpg');
   }
 }
 
 header.pape {
-  background-image: url('/images/headers/pape_header_large.jpg');
-
-  @include desktop {
-    background-image: url('/images/headers/pape_header_desktop.jpg');
-  }
-
-  @include small-desktop {
-    background-image: url('/images/headers/pape_header_small_desktop.jpg');
-  }
+  background-image: url('/images/headers/pape_header_base.jpg');
 
   @include tablet {
-    background-image: url('/images/headers/pape_header_tablet.jpg');
-  }
-
-  @include mobile {
-    background-image: url('/images/headers/pape_header_mobile.jpg');
+    background-image: url('/images/headers/pape_header_base_tablet.jpg');
   }
 }
 
 header.termo {
-  background-image: url('/images/headers/termo_header_large.jpg');
-
-  @include desktop {
-    background-image: url('/images/headers/termo_header_desktop.jpg');
-  }
-
-  @include small-desktop {
-    background-image: url('/images/headers/termo_header_small_desktop.jpg');
-  }
+  background-image: url('/images/headers/termo_header_base.jpg');
 
   @include tablet {
-    background-image: url('/images/headers/termo_header_tablet.jpg');
-  }
-
-  @include mobile {
-    background-image: url('/images/headers/termo_header_mobile.jpg');
+    background-image: url('/images/headers/termo_header_base_tablet.jpg');
   }
 }
 
 header.contact_bg {
-  background-image: url('/images/headers/contact_header_large.jpg');
-
-  @include desktop {
-    background-image: url('/images/headers/contact_header_desktop.jpg');
-  }
-
-  @include small-desktop {
-    background-image: url('/images/headers/contact_header_small_desktop.jpg');
-  }
+  background-image: url('/images/headers/contact_header_base.jpg');
 
   @include tablet {
-    background-image: url('/images/headers/contact_header_tablet.jpg');
-  }
-
-  @include mobile {
-    background-image: url('/images/headers/contact_header_mobile.jpg');
+    background-image: url('/images/headers/contact_header_base_tablet.jpg');
   }
 }
+

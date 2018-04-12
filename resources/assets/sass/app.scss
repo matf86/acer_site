@@ -1,10 +1,11 @@
 // Bootstrap
 @import 'node_modules/bootstrap/scss/bootstrap';
 @import 'node_modules/lightbox2/dist/css/lightbox';
-@import url('https://fonts.googleapis.com/css?family=Jockey+One|Lato&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Jockey+One|Lato&subset=latin-ext');
 
 $primary-font: 'Lato', sans-serif;
 $secondary-font: 'Jockey One', sans-serif;
+$header-font: 'Pacifico', sans-serif;
 
 $primary-color: #4d9fe7;
 $background-color: #f9f9f9;
@@ -19,6 +20,8 @@ $border-radius: 5%;
 
 $width-big-desktop: 70%;
 $width-desktop: 80%;
+$width-small-desktop: 100%;
+
 
 $tablet: 768px;
 $small-desktop: 992px;
@@ -60,10 +63,6 @@ $big-desktop: 1600px;
 body {
   font-family: $primary-font;
   font-size: 16px;
-}
-
-h1 {
-  text-transform: uppercase;
 }
 
 h2 {

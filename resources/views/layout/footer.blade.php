@@ -1,6 +1,6 @@
 <footer>
     <div class="footer">
-        <a href="{{route('o_nas')}}"><div class="footer__logo"></div></a>
+        <a href="#top-nav"><div class="footer__logo"></div></a>
         <div class="footer__info">
             <div class="footer__info--address">
                 <p>Przedsiębiorstwo Wielobranżowe "ACER" S.C.</p>

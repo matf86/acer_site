@@ -10,7 +10,7 @@
 
 @section('content')
 
-<header class="row header {{$data['header_bg']}}">
+<header class="{{$data['header_bg']}}">
     <h1>{{$data['header']}}</h1>
 </header>
 

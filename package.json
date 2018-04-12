@@ -27,6 +27,7 @@
   "dependencies": {
     "jquery-form-validator": "^2.3.77",
     "lightbox2": "^2.10.0",
-    "scrollreveal": "^3.3.6"
+    "scrollreveal": "^3.3.6",
+    "smooth-scroll": "^12.1.5"
   }
 }

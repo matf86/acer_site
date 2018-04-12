@@ -6,6 +6,7 @@ export default class PluginProvider
         this.setupNavbarActiveLink();
         this.setupLightbox();
         this.setupContactFormValidator();
+        this.setupScrollSmooth();
     }
 
     setupScrollReveal() {
@@ -20,6 +21,16 @@ export default class PluginProvider
         });
 
         // console.log('ScrollReveal loaded');
+    }
+
+    setupScrollSmooth() {
+
+        window.scroll('a[href*="#"]', {
+            speed: 650,
+            easing: 'easeInOutCubic'
+        });
+
+        // console.log('Smooth-scroll loaded');
     }
 
     setupNavbarActiveLink() {

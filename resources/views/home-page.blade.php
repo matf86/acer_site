@@ -11,11 +11,14 @@
 @section('content')
 
 <header class="{{$data['header_bg']}}">
-    <h1 class="main_header">{{ $data['header'] }}</h1>
+    <h1>{{ $data['header'] }}</h1>
+    <div class="header__icon">
+        <a href="#about"><img class="scroll-down" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFxSURBVGhD7ZBNSsRAEEYDuhr3HsL7zMILeAwv4SEEj+BGryC4FgQ33kAQEl8y/bmYIab/Kj9YDwp7OtVf1bNxHMdxHOe/0XXdeV/h52y0bXsRjuUQdkW9Uy/UZbg2h3/cnnlf1D3ns3CdByG9xCdBA5xfKXMZRvUS34epAw9UnsyxhLCWYcSxhEiXGZMQVjJEj0mIeJkpCVFbhsgpCTEtEyshaskQFSsh/pYh7OPQF0+pDBGpEgO8uQ0Rp/DxMfQlkSvD01yJlj/7EHMKH3fUc9+cSqoMT0okbkLMODSZy9BqKyFoNpOhZR4JwaPqMnyaV0LwuJoMV8tICEKKZTguKyEIK5F5W4WEIDRbJhUzCUG4uYy5hGCImcxsEoJh1WVmlxAMrSazmIRgeLHM4hKCJbJlViMhWGbHTk/DdpGsTkKwVLTMaiUEy03KrF5CsOSozGYkBMueyGxOQrD0r8xmJUSQuaOuw5XjOI7jOM4kTfMDA4Bs3fBYVxwAAAAASUVORK5CYII="></a>
+    </div>
 </header>
 
 
-<section class="about_us">
+<section id="about" class="about_us">
         <h2>{{$data['about_us']['header']}}</h2>
         <p>
             {{$data['about_us']['text']}}

@@ -21,7 +21,7 @@
 
   @include tablet {
     background-attachment: fixed;
-    background-position: top;
+    background-position: top right;
     background-repeat: no-repeat;
     background-size: cover;
     border: 1px solid $border-color;
@@ -31,14 +31,7 @@
   }
 
   @include mobile {
-    background-attachment: fixed;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 1px solid $border-color;
-    display: block;
-    min-height: 40vh;
-    min-width: 100%;
+    display: none;
   }
 }
 
@@ -112,8 +105,8 @@
   transition: box-shadow .25s ease-out;
 
   @include small-desktop {
-    height: 250px;
-    width: 280px;
+    height: 260px;
+    width: 270px;
   }
 
   @include tablet {
