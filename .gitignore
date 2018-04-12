@@ -5,7 +5,7 @@ Homestead.json
 Homestead.yaml
 .env
 .sass-lint.yaml
-.php-deploy
+.deploy.php
 
 
 

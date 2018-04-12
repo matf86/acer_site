@@ -37,7 +37,10 @@ task('build', function () {
     run('cd {{release_path}} && build');
 });
 
+task('npm:production', 'npm run production');
+
 after('deploy:update_code', 'npm:install');
+after('npm:install', 'npm:production');
 // [Optional] if deploy fails automatically unlock.
 after('deploy:failed', 'deploy:unlock');
 
